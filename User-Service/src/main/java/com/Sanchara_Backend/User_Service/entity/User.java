@@ -39,6 +39,15 @@ public class User {
     private String address;
 
     @Column(nullable = false)
+    private String city;
+
+    @Column(nullable = false)
+    private String dob;
+
+    @Column(nullable = false)
+    private String profilePicture;
+
+    @Column(nullable = false)
     private boolean accountNonLocked;
 
     @Column(nullable = false)
