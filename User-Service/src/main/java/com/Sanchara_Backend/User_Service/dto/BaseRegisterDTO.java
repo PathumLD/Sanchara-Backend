@@ -1,6 +1,5 @@
 package com.Sanchara_Backend.User_Service.dto;
 
-import com.Sanchara_Backend.User_Service.entity.ERole;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

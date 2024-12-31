@@ -1,9 +1,13 @@
-package com.Sanchara_Backend.User_Service.entity;
+package com.Sanchara_Backend.User_Service.entity.business_owner;
 
+import com.Sanchara_Backend.User_Service.entity.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,7 +18,7 @@ public class BusinessOwner {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long ownerId;
+    private Long bOwnerId;
 
     @OneToOne
     @JoinColumn(name = "user_id")
@@ -40,6 +44,7 @@ public class BusinessOwner {
 
     private String businessLogo;
 
-    private String businessImages;
+    @OneToMany(mappedBy = "businessOwner", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<BusinessImage> businessImages = new ArrayList<>();
 
 }

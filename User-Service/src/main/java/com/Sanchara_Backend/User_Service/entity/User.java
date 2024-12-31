@@ -1,11 +1,11 @@
 package com.Sanchara_Backend.User_Service.entity;
 
+import com.Sanchara_Backend.User_Service.entity.role.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 

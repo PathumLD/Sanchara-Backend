@@ -1,4 +1,4 @@
-package com.Sanchara_Backend.User_Service.entity;
+package com.Sanchara_Backend.User_Service.entity.role;
 
 public enum ERole {
     ROLE_TOURIST,
